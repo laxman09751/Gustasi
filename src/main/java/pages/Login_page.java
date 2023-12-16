@@ -10,11 +10,6 @@ import utils.ElementUtils;
 public class Login_page {
 	WebDriver driver;
 	
-	public Login_page(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver,this);
-		elementUtils = new ElementUtils(driver);
-	}
 	
 	@FindBy(xpath="//div[contains(@class,'menu__btn d-none')]//a[1]")
 	private WebElement login;
